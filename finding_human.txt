@@ -1,0 +1,32 @@
+Machine learning project on Human activity prediction
+
+1) Problem statement : 
+
+Given the feature vector, the goal is to build the predictive model
+to predict the activity category of a human.
+
+2) Data exploration
+
+The dataset used for this project was acquired from UCI machine learning repository. 
+Train dataset has 7352 rows and 561  columns (features) while test data set has 2947 rows.
+Further looking into categories of human acitivity, there was 6 human categoires 
+to predicted, thus making it multiclass classification problem.
+
+There was no missing values found in either of dataset. 
+
+3 ) Model building 
+
+Three different models, namely, näive bäyes, random forest and support vector  
+machine learning were bulding for prediction.  Support vector machine has 
+highest classification acccuracy followed by random forest and naive bayes. 
+
+
+4) Dimensionality reduction 
+
+Two methods: principal component analysis , and feature importance from random forest 
+model were used to reduce the dimension of data. And models were fitted again on dimension
+reduced dataset. Using the first 65 principal components, support vector machine 
+ and naive bayes were fitted and using 100 informative features, random forest model was fitted again.
+Classification accuracy imporved with naive bayes model after reducing dimension, however
+accuracy decreased minimally with SVM and random forest. 
+
